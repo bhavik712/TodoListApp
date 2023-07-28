@@ -2,13 +2,23 @@
 <html>
     <head>
         <title>Todo list</title>
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <a href='home.html'><h3>Home</h3></a>
-        <h1>Todo List</h1>
-        <input type="text" id="update-task" placeholder="add your task"><br>
-        <button id="save-task">Save</button>
-        <button id="discard-changes">Discard</button>
+        <header class="arrange">
+            <a href='home.html'><h3>Home</h3></a>
+        </header>
+        <div id="edit-page-heding" class="arrange heading">
+            <h1>TodoList</h1>
+            <h2>Add Your Tasks to To Do Lists and be asured.</h2>
+        </div>
+        <div id="edit-todo" class="arrange">
+            <input type="text" id="update-task" placeholder="add your task"><br>
+            <button id="save-task" class="functions-buttons">Save</button>
+            <button id="discard-changes" class="functions-buttons">Discard</button>
+
+        </div>
+        
         <script src="scripts/edit-bundle.js"></script>
     </body>
 </html>

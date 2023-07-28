@@ -6,26 +6,38 @@ const showTodoList = (todoList) =>{
     document.querySelector('#show-todo').innerHTML = '';
     todoList.forEach ((todo)=>{
 
-        const taskEle = document.createElement('h2');
-        taskEle.textContent = todo.task;
-        document.querySelector('#show-todo').appendChild(taskEle);
+        const divEle = document.createElement ('div');
+        document.querySelector('#show-todo').appendChild(divEle);
 
-        const statusEle = document.createElement('button');
+        const taskDivEle = document.createElement ('span');
+        taskDivEle.id ='show-task';
+        taskDivEle.textContent = todo.task;
+        divEle.appendChild(taskDivEle);
+
+        // const taskEle = document.createElement('h2');
+        // taskEle.textContent = todo.task;
+        // taskDivEle.appendChild(taskEle);
+
+        const functionGroupEle = document.createElement ('span');
+        functionGroupEle.id = 'function-group'
+        divEle.appendChild(functionGroupEle);
+
+        const statusEle = document.createElement('span');
         let status = todo.completed ? 'completed' : 'pending';
         statusEle.textContent = status;
-        taskEle.appendChild(statusEle);
+        functionGroupEle.appendChild(statusEle);
 
         const updateEle = document.createElement('button');
         updateEle.textContent = 'Update Task';
-        taskEle.appendChild(updateEle);
+        functionGroupEle.appendChild(updateEle);
 
         const updateStatusEle = document.createElement('button');
         updateStatusEle.textContent = 'Update status'
-        taskEle.appendChild(updateStatusEle);
+        functionGroupEle.appendChild(updateStatusEle);
 
         const deleteTodoele = document.createElement('button');
         deleteTodoele.textContent ='Delete ToDo';
-        taskEle.appendChild(deleteTodoele);
+        functionGroupEle.appendChild(deleteTodoele);
 
         updateEle.addEventListener('click', (e)=>{
             location.assign(`edit.html#${todo.id}`);
