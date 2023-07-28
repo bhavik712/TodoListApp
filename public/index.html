@@ -2,19 +2,24 @@
 <html>
     <head>
         <title>TodoList</title>
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>TodoList</h1>
-        <div id="functions">
-            <button id="add-todo">Add To DO</button>
-            <input type="text" id="search-todo" placeholder="search todo">
-            <button id="sort-todo">Sort By Completed</button>
-            <input type="checkbox" id="hidden-completed">Hidden Completed
+        <div id="index-page-heading" class="arrange heading">
+            <h1>TodoList</h1>
+            <h3>Add Your Tasks to To Do Lists and be asured.</h3>
         </div>
-        <div id="create-todo">
-
+        
+        <div id="functions" class="arrange">
+            <button id="add-todo" class="functions-buttons">Add To DO</button>
+            <input type="text" id="search-todo" placeholder="search todo" class="search-sort">
+            <button id="sort-todo" class="functions-buttons">Sort By Completed</button>
+            <span id="pending-list" class="search-sort">
+                <input type="checkbox" id="hidden-completed">Hidden Completed
+            </span>
+           
         </div>
-        <div id="show-todo">
+        <div id="show-todo" class="arrange">
            
         </div>
         <script src = "scripts/index-bundle.js"></script>

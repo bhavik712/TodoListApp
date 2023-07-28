@@ -1,0 +1,134 @@
+body{
+    background-image: url('todolist.jpeg');
+    /* background-repeat: no-repeat; */
+}
+h1{
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arrange{
+    margin: 25px 200px;
+    border: 1px solid coral;
+    border-radius: 20px;
+    padding: 10px 0 10px 20px;
+}
+.heading{
+    background-color: #FFFEC4;
+}
+
+.heading h3{
+    margin: 10px 0;
+}
+
+#functions{
+    background-color: #CBFFA9;
+}
+.functions-buttons{
+    margin: 10px 30px 10px 0;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+
+.functions-buttons:hover{
+    background-color: blue;
+    cursor: pointer;
+
+}
+#search-todo{
+    width: 500px;
+}
+.search-sort{
+    margin: 10px 60px 10px 30px;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    border: 3px solid brown;
+    border-radius: 20px;
+}
+#show-todo{
+    background-color: #FFD6A5;
+}
+
+#show-todo div{
+    background-color: #FF9B9B;
+    margin: 20px 150px 20px 0px;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 20px 0 20px 10px;
+    justify-content: center;
+    
+}
+#show-task{
+    display: inline-block;
+    font-size: 32px;
+    width: 500px;
+    padding-left: 10px;
+}
+/* #function-group{
+    display: inline-block;
+} */
+
+#function-group{
+    align-items: center;
+}
+#function-group span{
+    display: inline-block;
+    font-size: 32px;
+    border: 2px dotted blue;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: grey;
+}
+
+#function-group button{
+    margin: 0px 10px;
+    background-color: green;
+    color: white;
+    padding: 15px 10px;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+
+#function-group button:hover{
+    background-color: blue;
+    cursor: pointer;
+
+}
+header{
+    background-color: #CBFFA9;
+}
+
+header a{
+    text-decoration: none;
+}
+
+#edit-todo{
+    background-color:  #FF9B9B;
+}
+#edit-todo input{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border: 3px solid brown;
+    border-radius: 20px;
+    width: 500px;
+    margin: 20px 0;
+}
